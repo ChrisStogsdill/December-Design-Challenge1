@@ -2,5 +2,7 @@
 
 This will be a design challenge to try and copy the design of a website. 
 
-Aspects I am unsure of to start with 
+Aspects this project will help with.
 - getting text over an image. 
+- how to get a search button's icon
+- how to do a header's menu

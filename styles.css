@@ -2,12 +2,129 @@
     margin: 0;
 }
 
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 #header {
     height: 65px;
     border-bottom: 1px groove rgba(107, 104, 104, 0.301);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+    
+}
+
+.logo-container {
+    height: 40px;
+
 }
 
 #logo {
     height: 40px;
     width: auto;
+    
+}
+
+.header-links {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.search-button {
+    border: none;
+    background-color: white;
+    font: inherit;
+}
+
+/* Dropdown button formatting section */
+.dropdown-button {
+    background-color: white;    
+    border: none;
+    font: inherit;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+
+
+.sign-in-button {
+    font: inherit;
+    background-color: red;
+    color: white;
+    border-radius: 10%;
+    border: none;    
+    padding: 5px 15px;
+    flex-shrink: 0;
+}
+
+.image-section-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+   
+}
+.image-container {
+    position: relative;
+}
+
+.image-text {
+    position: absolute;
+    
+    color: white;
+    padding: 10px;
+    bottom: 5px;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px black; 
+    }
+
+.blue-text-background {background-color: rgba(4, 52, 139, 0.39);}
+.green-text-background {background-color: rgba(4, 158, 138, 0.39);}
+.red-text-background {background-color: rgba(110, 4, 4, 0.39);}
+
+
+
+.images {
+    width: 200px;
+    height: 400px;
+    position: relative;
+    border-radius: 3px;
+}
+
+
+
+
+@media screen and (max-width: 975px) {
+    #header {
+        gap: 10px;
+        
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #header {
+        height: 100px;
+    }
 }

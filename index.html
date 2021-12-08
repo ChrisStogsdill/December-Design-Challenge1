@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>December-Design-Challenge1</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- load font awesome icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
 <!--Header outside container  -->
 <div id="header">
+    
     <img id="logo" src="/images/WarframeLogo_Black.png" alt="warframe logo">
-
+    
     <!-- div for header links -->
     <div class="header-links">
         <a href="https://www.google.com/">Store</a>
@@ -21,11 +24,43 @@
         <a href="https://www.google.com/">Reviews</a>
         <a href="https://www.google.com/">Boards</a>
         <a href="https://www.google.com/">Wikis</a>
+    
+    <!-- Dropdown menu -->
+        <div class="dropdown">
+            <button class="dropdown-button">More &#709;</button>
+            <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            </div>
+        </div>
+        <button class="search-button" type="submit"><i class="fa fa-search"></i></button>
+        <button class="sign-in-button">Sign In</button>
     </div>
-
-
 </div>
 
+<!-- div for middle pictures -->
+<div class="image-section-container">
+    <div class="image-container">
+        <img class="images" src="/images/CorpusEnvironmentSuit.jpg" alt="Corpus Environment Suit art">
+        <p class="image-text blue-text-background">Game Dev Accuses Weapons Manufacturer of Stealing Its Gun Design... Twice</p>
+    </div>
+
+    <div class="image-container">
+        <img class="images" src="/images/GarudaDeluxe.png" alt="Garuda Delux Art">
+        <p class="image-text green-text-background">Halo Infinite Single-player Campaign Review</p>
+    </div>
+
+    <div class="image-container">
+        <img class="images" src="/images/TennoGuns.jpg" alt="Warframe guns art">
+        <p class="image-text red-text-background">The Best Game of teh Year 2021 Nominees</p>
+    </div>
+
+    <div class="image-container">
+        <img class="images" src="/images/WukongDeluxe.png" alt="Wukong Delux Art">
+        <p class="image-text red-text-background">The Best RPG of 2021 Nominees</p>
+    </div>
+</div>
 
 
 </body>
