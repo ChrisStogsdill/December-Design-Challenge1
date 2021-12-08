@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+}
+
+#header {
+    height: 65px;
+    border-bottom: 1px groove rgba(107, 104, 104, 0.301);
+}
+
+#logo {
+    height: 40px;
+    width: auto;
+}
