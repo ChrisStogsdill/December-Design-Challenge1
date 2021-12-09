@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: Helvetica, sans-serif;
+    
 }
 body {
     min-width: 300px;
@@ -11,13 +12,22 @@ a {
     color: black;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
+.header-container {
+    border-bottom: 1px groove rgba(107, 104, 104, 0.301);
+}
 #header {
     height: 65px;
-    border-bottom: 1px groove rgba(107, 104, 104, 0.301);
+    
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 250px;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
     
 }
 
@@ -36,6 +46,7 @@ a {
     gap: 10px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     
 }
 
@@ -71,7 +82,7 @@ a {
 
 
 .sign-in-button {
-    font: inherit;
+    font: 10px;
     background-color: red;
     color: white;
     border-radius: 10%;
@@ -99,9 +110,11 @@ button:hover {
 .image-section-container {
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding: 50px;
+    max-width: 1000px;
+    margin: auto;
    
 }
 .image-container {
@@ -130,12 +143,17 @@ button:hover {
     position: relative;
     border-radius: 3px;
 }
+
+.footer-container {
+    background-color: rgba(211, 211, 211, 0.432);
+}
 .footer {
     display: flex;
-    background-color: rgba(211, 211, 211, 0.432);
+ 
     height: 80px;
     align-items: center;
-    padding-left: 28%;
+    margin: auto;
+    max-width: 1000px;
 }
 .bottom-text {
     
