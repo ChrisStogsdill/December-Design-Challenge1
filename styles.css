@@ -1,8 +1,10 @@
 * {
     margin: 0;
+    font-family: Helvetica, sans-serif;
 }
-
-
+body {
+    min-width: 300px;
+}
 
 a {
     text-decoration: none;
@@ -76,6 +78,22 @@ a {
     border: none;    
     padding: 5px 15px;
     flex-shrink: 0;
+    position: relative;
+}
+button:hover {
+    opacity: 75%;
+}
+
+
+#myForm {
+    display: none;
+    padding: 20px;
+    position: absolute;
+    background-color: rgb(128, 128, 128);
+    width: 200px;
+    z-index: 1;
+    border-radius: 5px;
+    
 }
 
 .image-section-container {
@@ -112,17 +130,27 @@ a {
     position: relative;
     border-radius: 3px;
 }
+.footer {
+    display: flex;
+    background-color: rgba(211, 211, 211, 0.432);
+    height: 80px;
+    align-items: center;
+    padding-left: 28%;
+}
+.bottom-text {
+    
+    
+    font-weight: bold;
+    font-size: 25px;
+}
 
-
-
-
+/*  STAYS AT THE BOTTOM meida queries for mobile responsiveness  */
 @media screen and (max-width: 975px) {
     #header {
         gap: 10px;
         
     }
 }
-
 @media screen and (max-width: 375px) {
     #header {
         height: 100px;

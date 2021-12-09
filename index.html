@@ -11,6 +11,8 @@
 </head>
 <body>
 
+
+
 <!--Header outside container  -->
 <div id="header">
     
@@ -35,7 +37,23 @@
             </div>
         </div>
         <button class="search-button" type="submit"><i class="fa fa-search"></i></button>
-        <button class="sign-in-button">Sign In</button>
+        <!-- sign in button -->
+        <button onclick="signInButtonClick()" class="sign-in-button">Sign In</button>
+        <!-- sign in form -->
+            <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                  <h1>Login</h1>
+            
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+            
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+            
+                  <button type="submit" class="btn">Login</button>
+                  <button type="button" class="btn cancel" onclick="closeSignInForm()">Close</button>
+                </form>
+              </div>
     </div>
 </div>
 
@@ -62,6 +80,21 @@
     </div>
 </div>
 
+<div class="footer">
+<p class="bottom-text">Today's Top Stories</p>
+</div>
+
+
+<!-- scripting area -->
+<script>
+    function signInButtonClick() {
+        document.getElementById("myForm").style.display = "flex";
+    }
+
+    function closeSignInForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+</script>
 
 </body>
 </html>
