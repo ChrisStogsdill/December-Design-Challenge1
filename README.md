@@ -2,6 +2,8 @@
 
 This will be a design challenge to try and copy the design of a website. 
 
+Site hosted here - https://december-design-challenge1.netlify.app/
+
 Aspects this project will help with.
 - getting text over an image. 
 - how to get a search button's icon
